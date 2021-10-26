@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive pricing component</title>
+  </head>
+
+  <body>
+    <div class="pricing container">
+      <div class="pricing_heading">
+        <h1 class="pricing_title">Simple, traffic-based pricing</h1>
+        <h3 class="pricing_info">Sign-up for our 30-day trial. No credit card required.</h3>
+      </div>
+      <div class="pricing_card">
+        <div class="pricing_header">
+          <div class="pricing_components">
+            <p class="pricing_views"><span class="pricing_views-count">100K</span> PAGEVIEWS</p>
+            <div class="pricing_slider">
+              <label for="slider"></label>
+              <div class="bar"><span class="fill"></span></div>
+              <input type="range" class="pricing_slider-input" min="0" max="4" value="2" id="slider" />
+            </div>
+            <div class="pricing_prices">
+              <span class="pricing_price">$<span class="pricing__price js-price">16.00</span></span
+              ><span class="pricing_subs">/ month</span>
+            </div>
+          </div>
+          <div class="pricing_billing">
+            <p class="pricing_billing-month">Monthly Billing</p>
+            <label for="pricing-toggle" class="pricing_toggle">
+              <input class="pricing_toggle-input" type="checkbox" name="pricing-toggle" id="pricing-toggle" />
+              <div class="toggle_fill"></div>
+            </label>
+            <p class="pricing_billing-year">Yearly Billing</p>
+          </div>
+        </div>
+        <div class="pricing_footer">
+          <div class="pricing_footer-container">
+            <ul class="pricing_list">
+              <li class="pricing_item">
+                <img class="pricing_check" src="img/icon-check.svg" alt="icon-check" />
+                <span class="pricing_link">Unlimited websites</span>
+              </li>
+              <li class="pricing_item">
+                <img class="pricing_check" src="img/icon-check.svg" alt="icon-check" />
+                <span class="pricing_link">100% data ownership</span>
+              </li>
+              <li class="pricing_item">
+                <img class="pricing_check" src="img/icon-check.svg" alt="icon-check" />
+                <span class="pricing_link">Email reports</span>
+              </li>
+            </ul>
+            <a href="#" class="pricing_btn">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
